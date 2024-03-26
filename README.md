@@ -1,5 +1,5 @@
 # Doric_Photometry_Matlab_Analysis
-Matlab analysis of Doric photometry data used for analyzing GCaMP6f traces of tones and shocks
+Matlab analysis of Doric photometry data used for analyzing GCaMP6f traces of tone and shocks
 1.	System requirements:
 Code is run in Matlab2021b. Code has been tested on a windows 11 operating system.
 
