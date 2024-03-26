@@ -1,6 +1,6 @@
 # Doric_Photometry_Matlab_Analysis
 Matlab analysis of Doric photometry data used for analyzing GCaMP6f traces of tones and shocks
-System requirements
+1.	System requirements
 Code is run in Matlab2021b. Code has been tested on a windows 11 operating system.
 
 2.	Instalation guide
@@ -14,4 +14,32 @@ All function codes and excel files must be present in the same folder as the mat
 
 Code entitled "TS_all_mice_final_code"  will output variables containing AUC, maximum amplitude, and zscored traces for all tone and shock periods that occurred during cued threat, safety, and control conditioning and recall.
 
-Clicking "run" will run the code and all variables and figures will be produced. If you wish to view each mouses photometry trace, uncomment the figure section in the functions "Convert_tones_to_Zscore" and "Convert_shock_to_Zscore". To switch between analysis zscored traces and AUC change the output of "Convert_tones_to_Zscore" and "Convert_shock_to_Zscore" to “ZScoreTrace” or “AUC_average_trace”.
+This code also requires the following functions:
+AUC_tones
+Convert_tones_to_Zscore
+CorrelationErrorBarPlot_overlay
+CorrelationErrorBarPlot
+EachShockAUC
+shadedErrorBar
+shock_isolator
+shock_movement_isolator
+shock_to_Zscore
+tone_isolator
+tone_movement_isolator
+tone_trace_isolator
+tones_to_Zscore
+waveform_analyzer_3traces_blue
+waveform_analyzer_3traces_green_shock
+waveform_analyzer_3traces_green
+waveform_analyzer_3traces_red_shock
+waveform_analyzer_3traces_red
+waveform_analyzer_3traces
+waveform_analyzer_4traces_blue
+waveform_analyzer_4traces_green_shock
+waveform_analyzer_4traces_green
+waveform_analyzer_4traces_red_shock
+waveform_analyzer_movement_overlap
+waveform_analyzer_shock
+waveform_analyzer
+
+Clicking "run" will run the code and all variables and figures will be produced. 
