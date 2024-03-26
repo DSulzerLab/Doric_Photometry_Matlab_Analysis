@@ -1,20 +1,21 @@
 # Doric_Photometry_Matlab_Analysis
 Matlab analysis of Doric photometry data used for analyzing GCaMP6f traces of tones and shocks
-1.	System requirements
+1.	System requirements:
 Code is run in Matlab2021b. Code has been tested on a windows 11 operating system.
 
-2.	Instalation guide
+2.	Instalation guide:
 Matlab instalation instructions can be found at: https://www.mathworks.com/help/install/install-products.html
 
-3.	Demo
+3.	Demo:
 Data is present in excel sheets that contain entire trace as well as columns that contain only portions of the trace containing tone or shock. Code will output variables containing AUC, maximum amplitude, and zscored traces for all tones and shocks. Code will also produce figures of average tone and shock traces that are present in the manuscript. 
 
-4.	Instructions
+4.	Instructions:
 All function codes and excel files must be present in the same folder as the matlab code. Code must be opened in Matlab2021b. 
 
 Code entitled "TS_all_mice_final_code"  will output variables containing AUC, maximum amplitude, and zscored traces for all tone and shock periods that occurred during cued threat, safety, and control conditioning and recall.
 
 This code also requires the following functions:
+
 AUC_tones
 Convert_tones_to_Zscore
 CorrelationErrorBarPlot_overlay
