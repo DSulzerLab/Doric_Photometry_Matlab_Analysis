@@ -17,30 +17,55 @@ Code entitled "TS_all_mice_final_code"  will output variables containing AUC, ma
 This code also requires the following functions:
 
 AUC_tones
+
 Convert_tones_to_Zscore
+
 CorrelationErrorBarPlot_overlay
+
 CorrelationErrorBarPlot
+
 EachShockAUC
+
 shadedErrorBar
+
 shock_isolator
+
 shock_movement_isolator
+
 shock_to_Zscore
+
 tone_isolator
+
 tone_movement_isolator
+
 tone_trace_isolator
+
 tones_to_Zscore
+
 waveform_analyzer_3traces_blue
+
 waveform_analyzer_3traces_green_shock
+
 waveform_analyzer_3traces_green
+
 waveform_analyzer_3traces_red_shock
+
 waveform_analyzer_3traces_red
+
 waveform_analyzer_3traces
+
 waveform_analyzer_4traces_blue
+
 waveform_analyzer_4traces_green_shock
+
 waveform_analyzer_4traces_green
+
 waveform_analyzer_4traces_red_shock
+
 waveform_analyzer_movement_overlap
+
 waveform_analyzer_shock
+
 waveform_analyzer
 
 Clicking "run" will run the code and all variables and figures will be produced. 
