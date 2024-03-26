@@ -1,9 +1,4 @@
-function [data_diff_sig] = waveform_analyzer_shock(time, data1,data2)
-% Required to remove mouse ID from data columns
-% Can comment out this section if mouse ID is not in other files
-% data1 = data1(2:end, :);
-% data2 = data2(2:end, :);
-
+function [data_diff_sig] = waveform_analyzer_movement_overlap(time, data1,data2)
 %%
 % Compute mean and SEM of data
 data1_mean = mean(data1, 2);
@@ -80,33 +75,38 @@ consec1 = consec_idx(sig1_index, threshold);
 consec2 = consec_idx(sig2_index, threshold);
 consecdiff = consec_idx(sig_diff_index, threshold);
 
-data1_sig(sig1_index(consec1)) = 3;
+data1_sig(sig1_index(consec1)) = 2.5;
 data2_sig(sig2_index(consec2)) = 2;
-data_diff_sig(sig_diff_index(consecdiff)) = 4;
+data_diff_sig(sig_diff_index(consecdiff)) = 3;
 
 %%
-%Plot results
+% Plot results
 figure; hold on
+yyaxis left
+ylabel('z score');
+ylim([-2 2]);
 x = [time.' flip(time).'];
 plot(time, data1_mean, 'Color', [0 0 1]);
 y1 = [(data1_mean - data1_sem).', flip(data1_mean + data1_sem).'];
 patch(x, y1, [0 0 0.8], 'linestyle', 'none', 'FaceAlpha', 0.15);
 
+
+yyaxis right
+ylabel('movement score');
+ylim([-100 100]);
 plot(time, data2_mean, 'Color', [0.8 0 0]);
 y2 = [(data2_mean - data2_sem).', flip(data2_mean + data2_sem).'];
 patch(x, y2, [0.8 0 0], 'linestyle', 'none', 'FaceAlpha', 0.15);
 
-plot(time, data1_sig, 'Color', [0 0 1]);
-plot(time, data2_sig, 'Color', [0.8 0 0]);
-plot(time, data_diff_sig, 'Color', [0 0 0]);
+% plot(time, data1_sig, 'Color', [0 0 1]);
+% plot(time, data2_sig, 'Color', [0.8 0 0]);
+% plot(time, data_diff_sig, 'Color', [0 0 0]);
 set(gca,'FontSize',40);
 xlabel('Time');
-ylabel('z score');
 xline(0);
-% xline(2);
-xlim([-5 10]);
-ylim([-1 4])
-xticks([-5: 1: 10]);
+xline(20);
+xlim([-20 40]);
+
 
 %%
 function [c_idx] = consec_idx(indices,threshold)

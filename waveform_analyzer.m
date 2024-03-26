@@ -1,9 +1,4 @@
 function [data_diff_sig] = waveform_analyzer(time, data1,data2)
-% Required to remove mouse ID from data columns
-% Can comment out this section if mouse ID is not in other files
-% data1 = data1(2:end, :);
-% data2 = data2(2:end, :);
-
 %%
 % Compute mean and SEM of data
 data1_mean = mean(data1, 2);

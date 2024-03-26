@@ -1,8 +1,8 @@
-function [Norm_z_traces] = Convert_tones_to_Zscore(Time,trace)
+function [ZScoreTrace] = shock_to_Zscore(Time,trace)
 %this will take a set of tones from 1 mouse on 1 day 
 
 %then will smooth the traces
-smooth_traces=movmean(trace,80);
+smooth_traces=movmean(trace,10);
 
 % number of traces
 n=size(trace,2);
@@ -15,7 +15,7 @@ z_traces=zscore(smooth_traces);
 preCS_means=zeros(1,n);
 
 for i=1:n
-    preCS_means(i)=mean(z_traces(1:2439,i),1);
+    preCS_means(i)=mean(z_traces(1:100,i),1);
 end
 
 %then normalize trace to the preCS mean
@@ -25,7 +25,6 @@ for i=1:n
     Norm_z_traces(:,i)=z_traces(:,i)-preCS_means(i);
 end
 
-
 %then will average the traces
 ZScoreTrace=mean(Norm_z_traces,2);
 
@@ -33,17 +32,16 @@ ZScoreTrace=mean(Norm_z_traces,2);
 %also will calculate SEM
 zSEM=std(Norm_z_traces,[],2)/sqrt(size(Norm_z_traces,2));
 
-% this will plot figure 
+%also plot figure
 % figure;
 % shadedErrorBar(Time,ZScoreTrace,zSEM);
-% ylim([-2 5]);
+% ylim([-2 2]);
 % xlabel('Time');
 % ylabel('z score');
 % hold on
 % xline(0);
-% xline(20);
-% xlim([-20 40]);
-
+% xline(2);
+% xlim([-5 10]);
 
 
 end

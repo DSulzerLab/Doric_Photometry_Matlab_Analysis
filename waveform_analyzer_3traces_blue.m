@@ -107,33 +107,33 @@ data3_sig(sig3_index(consec3)) = 4;
 % this is so the plot can be exported to SVG
 set(0, 'DefaultFigureRenderer', 'painters');
 
-figure; hold on
-x = [time.' flip(time).'];
-plot(time, data1_mean, 'Color', [0 0 0.2]);
-y1 = [(data1_mean - data1_sem).', flip(data1_mean + data1_sem).'];
-patch(x, y1, [0 0 0.1], 'linestyle', 'none', 'FaceAlpha', 0.15);
-
-plot(time, data2_mean, 'Color', [0 0 0.5]);
-y2 = [(data2_mean - data2_sem).', flip(data2_mean + data2_sem).'];
-patch(x, y2, [0 0 0.4], 'linestyle', 'none', 'FaceAlpha', 0.15);
-
-plot(time, data3_mean, 'Color', [0 0 0.8]);
-y3 = [(data3_mean - data3_sem).', flip(data3_mean + data3_sem).'];
-patch(x, y3, [0 0 0.8], 'linestyle', 'none', 'FaceAlpha', 0.15);
-
-plot(time, data1_sig, 'Color', [0 0 0.2]);
-plot(time, data2_sig, 'Color', [0 0 0.5]);
-plot(time, data3_sig, 'Color', [0 0 0.8]);
-%plot(time, data_diff_sig, 'Color', [0 0 0]);
-set(gca,'FontSize',40);
-xlabel('Time');
-ylabel('z score');
-xline(0);
-xline(20);
-xlim([-10 30]);
-ylim([-1 4])
-xticks([-10: 5: 30]);
-
+% figure; hold on
+% x = [time.' flip(time).'];
+% plot(time, data1_mean, 'Color', [0 0 0.2]);
+% y1 = [(data1_mean - data1_sem).', flip(data1_mean + data1_sem).'];
+% patch(x, y1, [0 0 0.1], 'linestyle', 'none', 'FaceAlpha', 0.15);
+% 
+% plot(time, data2_mean, 'Color', [0 0 0.5]);
+% y2 = [(data2_mean - data2_sem).', flip(data2_mean + data2_sem).'];
+% patch(x, y2, [0 0 0.4], 'linestyle', 'none', 'FaceAlpha', 0.15);
+% 
+% plot(time, data3_mean, 'Color', [0 0 0.8]);
+% y3 = [(data3_mean - data3_sem).', flip(data3_mean + data3_sem).'];
+% patch(x, y3, [0 0 0.8], 'linestyle', 'none', 'FaceAlpha', 0.15);
+% 
+% plot(time, data1_sig, 'Color', [0 0 0.2]);
+% plot(time, data2_sig, 'Color', [0 0 0.5]);
+% plot(time, data3_sig, 'Color', [0 0 0.8]);
+% %plot(time, data_diff_sig, 'Color', [0 0 0]);
+% set(gca,'FontSize',40);
+% xlabel('Time');
+% ylabel('z score');
+% xline(0);
+% xline(20);
+% xlim([-10 30]);
+% ylim([-1 4])
+% xticks([-10: 5: 30]);
+% 
 
 %%
 function [c_idx] = consec_idx(indices,threshold)
