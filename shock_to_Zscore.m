@@ -1,4 +1,4 @@
-function [ZScoreTrace] = shock_to_Zscore(Time,trace)
+function [Norm_z_traces] = shock_to_Zscore(Time,trace)
 %this will take a set of tones from 1 mouse on 1 day 
 
 %then will smooth the traces
