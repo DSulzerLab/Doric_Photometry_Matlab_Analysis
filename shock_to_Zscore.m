@@ -33,15 +33,14 @@ ZScoreTrace=mean(Norm_z_traces,2);
 zSEM=std(Norm_z_traces,[],2)/sqrt(size(Norm_z_traces,2));
 
 %also plot figure
-% figure;
-% shadedErrorBar(Time,ZScoreTrace,zSEM);
-% ylim([-2 2]);
-% xlabel('Time');
-% ylabel('z score');
-% hold on
-% xline(0);
-% xline(2);
-% xlim([-5 10]);
+figure;
+shadedErrorBar(Time,ZScoreTrace,zSEM);
+xlabel('Time');
+ylabel('z score');
+hold on
+xline(0);
+xline(2);
+xlim([-5 10]);
 
 
 end

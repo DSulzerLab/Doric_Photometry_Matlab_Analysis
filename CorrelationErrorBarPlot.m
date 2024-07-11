@@ -19,16 +19,16 @@ zSEM=std(ZScoreTrace_NoNaN,[],2)/sqrt(size(ZScoreTrace_NoNaN,2));
 
 %also plot figure
 
-% figure;
-% shadedErrorBar(Time,average_trace,zSEM);
-% ylabel('Pearsons R');
-% xlabel('Time');
-% % ylim([-1 1]);
-% yticks([-1:0.2:1]);
-% xline(0,'b','LineWidth',2);
-% % xlim([-4 4]);
-% xticks([-50:5:50]);
-% set(gca,'FontSize',40);
+figure;
+shadedErrorBar(Time,average_trace,zSEM);
+ylabel('Pearsons R');
+xlabel('Time');
+% ylim([-1 1]);
+yticks([-1:0.2:1]);
+xline(0,'b','LineWidth',2);
+% xlim([-4 4]);
+xticks([-50:5:50]);
+set(gca,'FontSize',40);
 
 % find r value when traces are perfectly alighed
 % time point 0 in the cross corelation is cell 1201

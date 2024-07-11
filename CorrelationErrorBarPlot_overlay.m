@@ -30,10 +30,8 @@ shadedErrorBar(Time,average_trace_trained2,zSEM_trained2,'lineprops',{'g','marke
 
 ylabel('Pearsons R');
 xlabel('Time');
-% ylim([-1 1]);
 yticks([-1:0.2:1]);
 xline(0,'b','LineWidth',2);
-% xlim([-4 4]);
 xticks([-50:5:50]);
 set(gca,'FontSize',40);
 
