@@ -11,7 +11,7 @@ Data is present in excel sheets that contain entire trace as well as columns tha
 
 4.	Instructions:
 All function codes and excel files must be present in the same folder as the matlab code. Code must be opened in Matlab2021b. Excel files used by the code can be acquired at: 
-dx.doi.org/10.6084/m9.figshare.26224232
+dx.doi.org/10.6084/m9.figshare.26264546
 
 Code entitled "TS_all_mice_final_code"  will output variables containing AUC, maximum amplitude, and zscored traces for all tone and shock periods that occurred during cued threat, safety, and control conditioning and recall.
 
