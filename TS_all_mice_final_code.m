@@ -471,10 +471,12 @@ optofluid_TS21D1_safety_day3=xlsread('TS21D1_optofluid_safety_day3_dff.xlsx');
 % mouse #21 tones
 optofluid_TS21D1_tone_vehicle=xlsread('TS21D1_optofluid_before_vehicle_tone_dff.xlsx');
 optofluid_TS21D1_tone_TTX=xlsread('TS21D1_optofluid_TTX_tone_dff.xlsx');
+optofluid_TS21D1_tone_DAant=xlsread('TS21D1_optofluid_DAantagonist_tone_dff.xlsx');
 
 % mouse #21 shocks 
 optofluid_TS21D1_shock_vehicle=xlsread('TS21D1_optofluid_before_vehicle_shock_dff.xlsx');
 optofluid_TS21D1_shock_TTX=xlsread('TS21D1_optofluid_TTX_shock_dff.xlsx');
+optofluid_TS21D1_shock_DAant=xlsread('TS21D1_optofluid_DAantagonist_shock_dff.xlsx');
 
 % mouse #22 training
 optofluid_TS22D1_safety_day1=xlsread('TS22D1_optofluid_safety_day1_dff.xlsx');
@@ -485,10 +487,12 @@ optofluid_TS22D1_safety_day3=xlsread('TS22D1_optofluid_safety_day3_dff.xlsx');
 % mouse #22 tones
 optofluid_TS22D1_tone_vehicle=xlsread('TS22D1_optofluid_before_vehicle_tone_dff.xlsx');
 optofluid_TS22D1_tone_TTX=xlsread('TS22D1_optofluid_TTX_tone_dff.xlsx');
+optofluid_TS22D1_tone_DAant=xlsread('TS22D1_optofluid_DAantagonist_tone_dff.xlsx');
 
 % mouse #22 shocks 
 optofluid_TS22D1_shock_vehicle=xlsread('TS22D1_optofluid_before_vehicle_shock_dff.xlsx');
 optofluid_TS22D1_shock_TTX=xlsread('TS22D1_optofluid_TTX_shock_dff.xlsx');
+optofluid_TS22D1_shock_DAant=xlsread('TS22D1_optofluid_DAantagonist_shock_dff.xlsx');
 
 % mouse #23 training
 optofluid_TS23D1_safety_day1=xlsread('TS23D1_optofluid_safety_day1_dff.xlsx');
@@ -499,10 +503,12 @@ optofluid_TS23D1_safety_day3=xlsread('TS23D1_optofluid_safety_day3_dff.xlsx');
 % mouse #23 tones
 optofluid_TS23D1_tone_vehicle=xlsread('TS23D1_optofluid_before_vehicle_tone_dff.xlsx');
 optofluid_TS23D1_tone_TTX=xlsread('TS23D1_optofluid_TTX_tone_dff.xlsx');
+optofluid_TS23D1_tone_DAant=xlsread('TS23D1_optofluid_DAantagonist_tone_dff.xlsx');
 
 % mouse #23 shocks 
 optofluid_TS23D1_shock_vehicle=xlsread('TS23D1_optofluid_before_vehicle_shock_dff.xlsx');
 optofluid_TS23D1_shock_TTX=xlsread('TS23D1_optofluid_TTX_shock_dff.xlsx');
+optofluid_TS23D1_shock_DAant=xlsread('TS23D1_optofluid_DAantagonist_shock_dff.xlsx');
 
 % mouse #31 training
 optofluid_TS31D1_safety_day1=xlsread('TS31D1_optofluid_safety_day1_dff.xlsx');
@@ -513,10 +519,12 @@ optofluid_TS31D1_safety_day3=xlsread('TS31D1_optofluid_safety_day3_dff.xlsx');
 % mouse #31 tones
 optofluid_TS31D1_tone_vehicle=xlsread('TS31D1_optofluid_before_vehicle_tone_dff.xlsx');
 optofluid_TS31D1_tone_TTX=xlsread('TS31D1_optofluid_TTX_tone_dff.xlsx');
+optofluid_TS31D1_tone_DAant=xlsread('TS31D1_optofluid_DAantagonist_tone_dff.xlsx');
 
 % mouse #31 shocks 
 optofluid_TS31D1_shock_vehicle=xlsread('TS31D1_optofluid_before_vehicle_shock_dff.xlsx');
 optofluid_TS31D1_shock_TTX=xlsread('TS31D1_optofluid_TTX_shock_dff.xlsx');
+optofluid_TS31D1_shock_DAant=xlsread('TS31D1_optofluid_DAantagonist_shock_dff.xlsx');
 
 % mouse #32 training
 optofluid_TS32D1_safety_day1=xlsread('TS32D1_optofluid_safety_day1_dff.xlsx');
@@ -527,10 +535,12 @@ optofluid_TS32D1_safety_day3=xlsread('TS32D1_optofluid_safety_day3_dff.xlsx');
 % mouse #32 tones
 optofluid_TS32D1_tone_vehicle=xlsread('TS32D1_optofluid_before_vehicle_tone_dff.xlsx');
 optofluid_TS32D1_tone_TTX=xlsread('TS32D1_optofluid_TTX_tone_dff.xlsx');
+optofluid_TS32D1_tone_DAant=xlsread('TS32D1_optofluid_DAantagonist_tone_dff.xlsx');
 
 % mouse #32 shocks 
 optofluid_TS32D1_shock_vehicle=xlsread('TS32D1_optofluid_before_vehicle_shock_dff.xlsx');
 optofluid_TS32D1_shock_TTX=xlsread('TS32D1_optofluid_TTX_shock_dff.xlsx');
+optofluid_TS32D1_shock_DAant=xlsread('TS32D1_optofluid_DAantagonist_shock_dff.xlsx');
 
 
 %% time traces
@@ -2649,6 +2659,12 @@ optofluid_zTS23D1_tones_TTX=tone_isolator(optofluid_TS23D1_tone_TTX(:,1),optoflu
 optofluid_zTS31D1_tones_TTX=tone_isolator(optofluid_TS31D1_tone_TTX(:,1),optofluid_TS31D1_tone_TTX(:,2),recall_tone_times);
 optofluid_zTS32D1_tones_TTX=tone_isolator(optofluid_TS32D1_tone_TTX(:,1),optofluid_TS32D1_tone_TTX(:,2),recall_tone_times);
 
+optofluid_zTS21D1_tones_DAant=tone_isolator(optofluid_TS21D1_tone_DAant(:,1),optofluid_TS21D1_tone_DAant(:,2),recall_tone_times);
+optofluid_zTS22D1_tones_DAant=tone_isolator(optofluid_TS22D1_tone_DAant(:,1),optofluid_TS22D1_tone_DAant(:,2),recall_tone_times);
+optofluid_zTS23D1_tones_DAant=tone_isolator(optofluid_TS23D1_tone_DAant(:,1),optofluid_TS23D1_tone_DAant(:,2),recall_tone_times);
+optofluid_zTS31D1_tones_DAant=tone_isolator(optofluid_TS31D1_tone_DAant(:,1),optofluid_TS31D1_tone_DAant(:,2),recall_tone_times);
+optofluid_zTS32D1_tones_DAant=tone_isolator(optofluid_TS32D1_tone_DAant(:,1),optofluid_TS32D1_tone_DAant(:,2),recall_tone_times);
+
 % shocks + drug
 optofluid_zTS21D1_shocks_vehicle=shock_isolator(optofluid_TS21D1_shock_vehicle(:,1),optofluid_TS21D1_shock_vehicle(:,2),day2_shock_times_safety);
 optofluid_zTS22D1_shocks_vehicle=shock_isolator(optofluid_TS22D1_shock_vehicle(:,1),optofluid_TS22D1_shock_vehicle(:,2),day2_shock_times_safety);
@@ -2661,6 +2677,13 @@ optofluid_zTS22D1_shocks_TTX=shock_isolator(optofluid_TS22D1_shock_TTX(:,1),opto
 optofluid_zTS23D1_shocks_TTX=shock_isolator(optofluid_TS23D1_shock_TTX(:,1),optofluid_TS23D1_shock_TTX(:,2),day2_shock_times_safety);
 optofluid_zTS31D1_shocks_TTX=shock_isolator(optofluid_TS31D1_shock_TTX(:,1),optofluid_TS31D1_shock_TTX(:,2),day2_shock_times_safety);
 optofluid_zTS32D1_shocks_TTX=shock_isolator(optofluid_TS32D1_shock_TTX(:,1),optofluid_TS32D1_shock_TTX(:,2),day2_shock_times_safety);
+
+optofluid_zTS21D1_shocks_DAant=shock_isolator(optofluid_TS21D1_shock_DAant(:,1),optofluid_TS21D1_shock_DAant(:,2),day2_shock_times_safety);
+optofluid_zTS22D1_shocks_DAant=shock_isolator(optofluid_TS22D1_shock_DAant(:,1),optofluid_TS22D1_shock_DAant(:,2),day2_shock_times_safety);
+optofluid_zTS23D1_shocks_DAant=shock_isolator(optofluid_TS23D1_shock_DAant(:,1),optofluid_TS23D1_shock_DAant(:,2),day2_shock_times_safety);
+optofluid_zTS31D1_shocks_DAant=shock_isolator(optofluid_TS31D1_shock_DAant(:,1),optofluid_TS31D1_shock_DAant(:,2),day2_shock_times_safety);
+optofluid_zTS32D1_shocks_DAant=shock_isolator(optofluid_TS32D1_shock_DAant(:,1),optofluid_TS32D1_shock_DAant(:,2),day2_shock_times_safety);
+
 
 %% grouping optofluidic data together
 
@@ -2675,10 +2698,12 @@ optofluid_day3_shocks=[mean(optofluid_zTS21D1_shocks_day3,2),mean(optofluid_zTS2
 % tone + drug infusions
 optofluid_vehicle_tone=[mean(optofluid_zTS21D1_tones_vehicle,2),mean(optofluid_zTS22D1_tones_vehicle,2),mean(optofluid_zTS23D1_tones_vehicle,2),mean(optofluid_zTS31D1_tones_vehicle,2),mean(optofluid_zTS32D1_tones_vehicle,2)];
 optofluid_TTX_tone=[mean(optofluid_zTS21D1_tones_TTX,2),mean(optofluid_zTS22D1_tones_TTX,2),mean(optofluid_zTS23D1_tones_TTX,2),mean(optofluid_zTS31D1_tones_TTX,2),mean(optofluid_zTS32D1_tones_TTX,2)];
+optofluid_DAant_tone=[mean(optofluid_zTS21D1_tones_DAant,2),mean(optofluid_zTS22D1_tones_DAant,2),mean(optofluid_zTS23D1_tones_DAant,2),mean(optofluid_zTS31D1_tones_DAant,2),mean(optofluid_zTS32D1_tones_DAant,2)];
 
 % shock + drug infusions
 optofluid_vehicle_shock=[mean(optofluid_zTS21D1_shocks_vehicle,2),mean(optofluid_zTS22D1_shocks_vehicle,2),mean(optofluid_zTS23D1_shocks_vehicle,2),mean(optofluid_zTS31D1_shocks_vehicle,2),mean(optofluid_zTS32D1_shocks_vehicle,2)];
 optofluid_TTX_shock=[mean(optofluid_zTS21D1_shocks_TTX,2),mean(optofluid_zTS22D1_shocks_TTX,2),mean(optofluid_zTS23D1_shocks_TTX,2),mean(optofluid_zTS31D1_shocks_TTX,2),mean(optofluid_zTS32D1_shocks_TTX,2)];
+optofluid_DAant_shock=[mean(optofluid_zTS21D1_shocks_DAant,2),mean(optofluid_zTS22D1_shocks_DAant,2),mean(optofluid_zTS23D1_shocks_DAant,2),mean(optofluid_zTS31D1_shocks_DAant,2),mean(optofluid_zTS32D1_shocks_DAant,2)];
 
 %% do waveform analysis on tones for optolfuidic experiments
 
@@ -2686,11 +2711,19 @@ optofluid_TTX_shock=[mean(optofluid_zTS21D1_shocks_TTX,2),mean(optofluid_zTS22D1
 waveform_analyzer(tone_window_of_interpolation,optofluid_vehicle_tone,optofluid_TTX_tone);
 title('Safety Tone Vehicle vs TTX')
 
+% vehicle vs DAant 
+waveform_analyzer(tone_window_of_interpolation,optofluid_vehicle_tone,optofluid_DAant_tone);
+title('Safety Tone Vehicle vs DAant')
+
 %% wave form analysis on footshocks for optolfuidic experiments
 
 % vehicle vs TTX 
 waveform_analyzer_shock(shock_window_of_interpolation,optofluid_vehicle_shock,optofluid_TTX_shock);
 title('Shock Vehicle vs TTX')
+
+% vehicle vs DAant 
+waveform_analyzer_shock(shock_window_of_interpolation,optofluid_vehicle_shock,optofluid_DAant_shock);
+title('Shock Vehicle vs DAant')
 
 %% sort recall tones for the heat maps
 
@@ -2722,6 +2755,20 @@ optofluid_TTX_recall_tone10=[optofluid_zTS21D1_tones_TTX(:,10),optofluid_zTS22D1
 
 optofluid_TTX_recall_all=[mean(optofluid_TTX_recall_tone1,2),mean(optofluid_TTX_recall_tone2,2),mean(optofluid_TTX_recall_tone3,2),mean(optofluid_TTX_recall_tone4,2),mean(optofluid_TTX_recall_tone5,2),mean(optofluid_TTX_recall_tone6,2),mean(optofluid_TTX_recall_tone7,2),mean(optofluid_TTX_recall_tone8,2),mean(optofluid_TTX_recall_tone9,2),mean(optofluid_TTX_recall_tone10,2),];
 
+% DAant recall
+optofluid_DAant_recall_tone1=[optofluid_zTS21D1_tones_DAant(:,1),optofluid_zTS22D1_tones_DAant(:,1),optofluid_zTS23D1_tones_DAant(:,1),optofluid_zTS31D1_tones_DAant(:,1),optofluid_zTS32D1_tones_DAant(:,1)];
+optofluid_DAant_recall_tone2=[optofluid_zTS21D1_tones_DAant(:,2),optofluid_zTS22D1_tones_DAant(:,2),optofluid_zTS23D1_tones_DAant(:,2),optofluid_zTS31D1_tones_DAant(:,2),optofluid_zTS32D1_tones_DAant(:,2)];
+optofluid_DAant_recall_tone3=[optofluid_zTS21D1_tones_DAant(:,3),optofluid_zTS22D1_tones_DAant(:,3),optofluid_zTS23D1_tones_DAant(:,3),optofluid_zTS31D1_tones_DAant(:,3),optofluid_zTS32D1_tones_DAant(:,3)];
+optofluid_DAant_recall_tone4=[optofluid_zTS21D1_tones_DAant(:,4),optofluid_zTS22D1_tones_DAant(:,4),optofluid_zTS23D1_tones_DAant(:,4),optofluid_zTS31D1_tones_DAant(:,4),optofluid_zTS32D1_tones_DAant(:,4)];
+optofluid_DAant_recall_tone5=[optofluid_zTS21D1_tones_DAant(:,5),optofluid_zTS22D1_tones_DAant(:,5),optofluid_zTS23D1_tones_DAant(:,5),optofluid_zTS31D1_tones_DAant(:,5),optofluid_zTS32D1_tones_DAant(:,5)];
+optofluid_DAant_recall_tone6=[optofluid_zTS21D1_tones_DAant(:,6),optofluid_zTS22D1_tones_DAant(:,6),optofluid_zTS23D1_tones_DAant(:,6),optofluid_zTS31D1_tones_DAant(:,6),optofluid_zTS32D1_tones_DAant(:,6)];
+optofluid_DAant_recall_tone7=[optofluid_zTS21D1_tones_DAant(:,7),optofluid_zTS22D1_tones_DAant(:,7),optofluid_zTS23D1_tones_DAant(:,7),optofluid_zTS31D1_tones_DAant(:,7),optofluid_zTS32D1_tones_DAant(:,7)];
+optofluid_DAant_recall_tone8=[optofluid_zTS21D1_tones_DAant(:,8),optofluid_zTS22D1_tones_DAant(:,8),optofluid_zTS23D1_tones_DAant(:,8),optofluid_zTS31D1_tones_DAant(:,8),optofluid_zTS32D1_tones_DAant(:,8)];
+optofluid_DAant_recall_tone9=[optofluid_zTS21D1_tones_DAant(:,9),optofluid_zTS22D1_tones_DAant(:,9),optofluid_zTS23D1_tones_DAant(:,9),optofluid_zTS31D1_tones_DAant(:,9),optofluid_zTS32D1_tones_DAant(:,9)];
+optofluid_DAant_recall_tone10=[optofluid_zTS21D1_tones_DAant(:,10),optofluid_zTS22D1_tones_DAant(:,10),optofluid_zTS23D1_tones_DAant(:,10),optofluid_zTS31D1_tones_DAant(:,10),optofluid_zTS32D1_tones_DAant(:,10)];
+
+optofluid_DAant_recall_all=[mean(optofluid_DAant_recall_tone1,2),mean(optofluid_DAant_recall_tone2,2),mean(optofluid_DAant_recall_tone3,2),mean(optofluid_DAant_recall_tone4,2),mean(optofluid_DAant_recall_tone5,2),mean(optofluid_DAant_recall_tone6,2),mean(optofluid_DAant_recall_tone7,2),mean(optofluid_DAant_recall_tone8,2),mean(optofluid_DAant_recall_tone9,2),mean(optofluid_DAant_recall_tone10,2),];
+
 %% heat map of recall data for optofluidic experiment
 
 figure;
@@ -2749,6 +2796,20 @@ xline(0,'b','LineWidth',4);
 xline(20,'b','LineWidth',4);
 set(gca,'FontSize',20)
 colorbar;
+
+figure;
+clims = [0 2];
+imagesc(tone_window_of_interpolation,1,([optofluid_DAant_recall_all]).',clims);
+colormap('hot');
+title('TS D1 DAant Safety Recall');
+xlabel('Time');
+ylabel('Trial');
+hold on
+xline(0,'b','LineWidth',4);
+xline(20,'b','LineWidth',4);
+set(gca,'FontSize',20)
+colorbar;
+
 %% optofluid experiment tone and shock AUC
 
 optofluid_TS21D1_vehicle_tone_AUC=AUC_tones(optofluid_zTS21D1_tones_vehicle);
@@ -2762,5 +2823,11 @@ optofluid_TS22D1_TTX_tone_AUC=AUC_tones(optofluid_zTS22D1_tones_TTX);
 optofluid_TS23D1_TTX_tone_AUC=AUC_tones(optofluid_zTS23D1_tones_TTX);
 optofluid_TS31D1_TTX_tone_AUC=AUC_tones(optofluid_zTS31D1_tones_TTX);
 optofluid_TS32D1_TTX_tone_AUC=AUC_tones(optofluid_zTS32D1_tones_TTX);
+
+optofluid_TS21D1_DAant_tone_AUC=AUC_tones(optofluid_zTS21D1_tones_DAant);
+optofluid_TS22D1_DAant_tone_AUC=AUC_tones(optofluid_zTS22D1_tones_DAant);
+optofluid_TS23D1_DAant_tone_AUC=AUC_tones(optofluid_zTS23D1_tones_DAant);
+optofluid_TS31D1_DAant_tone_AUC=AUC_tones(optofluid_zTS31D1_tones_DAant);
+optofluid_TS32D1_DAant_tone_AUC=AUC_tones(optofluid_zTS32D1_tones_DAant);
 
 toc
